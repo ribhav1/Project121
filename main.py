@@ -14,7 +14,6 @@ while(video_capture.isOpened()):
     if not ret: 
         break
 
-    print(frame)
     frame = cv2.resize(frame, (640, 480))
     image = cv2.resize(image, (640, 480))
 
