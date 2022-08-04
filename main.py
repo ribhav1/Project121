@@ -8,8 +8,6 @@ image = cv2.imread('bg.jpg')
 for i in range(60):
     ret, bg = video_capture.read()
 
-bg = np.flip(bg, axis = 1)
-
 while(video_capture.isOpened()):
 
     ret, frame = video_capture.read()
